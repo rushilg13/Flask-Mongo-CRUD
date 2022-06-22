@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block add %}
+<div class="container text-center">
+	<h1>Create Operation</h3>
+	<form id="add-form" method="POST" action="{{ url_for('add')}}">
+		{{ form.csrf_token }}
+		
+		<h3>First Name</h3>{{form.fname}}
+		<h3>Last Name</h3>{{form.lname}}
+		<h3>Phone Number</h3>{{form.phone}}<br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+
+{%endblock%}
