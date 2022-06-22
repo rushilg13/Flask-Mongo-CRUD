@@ -5,3 +5,14 @@ from wtforms import StringField
 from wtforms.validators import InputRequired
 from flask_pymongo import PyMongo
 import os
+
+app= Flask(__name__)
+
+# Database name here
+app.config["MONGO_DBNAME"] = 'SwiftSkuINC'
+
+# Declare Secret Key and MongoURI
+app.config["MONGO_URI"] = 'mongodb://127.0.0.1:27017/SwiftSkuINC'
+app.config['SECRET_KEY'] = os.urandom(24)
+
+mongo = PyMongo(app)
