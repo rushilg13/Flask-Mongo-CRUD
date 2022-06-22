@@ -22,3 +22,9 @@ class AddForm(FlaskForm):
 	fname = StringField('fname', validators = [InputRequired()])
 	lname = StringField('lname', validators = [InputRequired()])
 	phone = StringField('phone', validators = [InputRequired()])
+
+# Read Documents
+@app.route('/home')
+def index():
+	user_list = mongo.db.users.find()
+	return render_template("result.html",user_list=user_list)
