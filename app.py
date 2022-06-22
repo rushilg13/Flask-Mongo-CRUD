@@ -16,3 +16,9 @@ app.config["MONGO_URI"] = 'mongodb://127.0.0.1:27017/SwiftSkuINC'
 app.config['SECRET_KEY'] = os.urandom(24)
 
 mongo = PyMongo(app)
+
+# Using WTForms class to handle create and update requests
+class AddForm(FlaskForm):
+	fname = StringField('fname', validators = [InputRequired()])
+	lname = StringField('lname', validators = [InputRequired()])
+	phone = StringField('phone', validators = [InputRequired()])
