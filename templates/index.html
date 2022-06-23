@@ -17,17 +17,18 @@
         <div class="row">
             <header class="site-header">
                 <div class="site-identity">
-                    <a href="#"><img src="{{url_for( 'static', filename='images/phone-book.png' )}}" width="60" height="60" class="img-responsive" alt="Responsive image" /></a>
-                    <h1><a href="#"><strong>Phone Book App</strong></a></h1>
+                    <img src="{{url_for( 'static', filename='images/phone-book.png' )}}" width="60" height="60" class="img-responsive" alt="Responsive image" />
+                    <h1><strong>Phone Book App</strong></h1>
                 </div>
                 <nav class="site-navigation">
                     <ul class="nav">
                         <li><a href="/about">About Us</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </nav>
             </header>
+            <br>
             <section>
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
                     <div class="btn-group" role="group">
