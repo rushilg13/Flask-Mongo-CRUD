@@ -37,7 +37,7 @@ Open your browser and go to `localhost:5000/home` to see the running program.
 <li>/home - Home Page</li>
 <li>/add - Create Page</li>
 <li>/updateform - Update Page</li>
-<li>/delete/<id>- Update Page</li>
+<li>/delete/[id]- Update Page</li>
 <li>/about - About Us Page</li>
 <li>/contact - Contact Us Page</li>
 <li>/news - News Page</li>
