@@ -81,10 +81,20 @@ def delete(id):
 	delete_record = user.delete_one({'_id':ObjectId(id)})
 	return redirect(url_for('index'))
 
-# Contact Us Page
+# About Us Page
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+# News Page
+@app.route('/news')
+def news():
+    return render_template('news.html')
+
+# Contact Us Page
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__=='__main__':
 	app.run(debug=True)
